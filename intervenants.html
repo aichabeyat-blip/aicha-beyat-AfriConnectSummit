@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AfriConnect Summit 2026</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <!-- Votre feuille de style personnelle-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-globe"></i>
+                <span>AfriConnect Summit 2026</span>
+            </div>
+            <ul class="nav" id="lieu">
+                <li><a href="index.html" class="active"> Accueil</a></li>
+                <li><a href="programme.html" >Programme</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
+                <li><a href="contact.html" >Contact</a></li>
+            </ul>
+            <div class="right">
+                <button id="theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <div class="humberger" id="humberger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <section class="Hero-I">
+        <h1>Intervenant</h1>
+        <p><a href="index.html">Accueil</a>
+        > intervenants
+        </p>
+    </section>
+    <section class="filter">
+        <button class="btn-filtre active" data-category="All">Tous</button>
+
+        <button class="btn-filtre" data-category="tech">IA & Tech</button>
+
+        <button class="btn-filtre" data-category="bbusiness">Business</button>
+
+        <button class="btn-filtre" data-category="design">Design</button>
+
+        <button class="btn-filtre" data-category="data">Data</button>
+    </section>
+
+    <sectin class="intervenants">
+        <div class="card-intervenant" data-category="tech">
+            <img src="images/IA Experts.jpeg" alt="Experts">
+            
+            <h3>Ahmed Diallo</h3>
+
+            <p>Expetre IA & Innovation</p>
+            <span>Senegal</span>
+        </div>
+         <div class="card-intervenant" data-category="business">
+            <img src="images/enterpreneur.jpeg" alt="enterpreneur">
+            
+            <h3>Jean Martin</h3>
+
+            <p>Enterpreneure Digital</p>
+            <span>Guinia</span>
+        </div>
+         <div class="card-intervenant" data-category="design">
+            <img src="images/UX . jpeg.jpeg" alt="UX">
+            
+            <h3>Sara Khaled</h3>
+
+            <p>UX/UI Designer</p>
+            <span>Marroc</span>
+        </div>
+         <div class="card-intervenant" data-category="data">
+            <img src="images/data scientist.jpeg" alt="data">
+            
+            <h3>Fatima Ba</h3>
+
+            <p>Data Scientist</p>
+            <span>Mauritanie</span>
+        </div>
+         <div class="card-intervenant" data-category="tech">
+            <img src="images/Ai developer. jpeg.jpeg" alt="developer">
+            
+            <h3>Fatou Diallo</h3>
+
+            <p>Developpeuse IA</p>
+            <span>Senegal</span>
+        </div>
+         <div class="card-intervenant" data-category="business">
+            <img src="images/Startup CEO.jpeg" alt="CEO">
+            
+            <h3>Ahmed Karim</h3>
+
+            <p>CEO Startup</p>
+            <span>Tunisie</span>
+        </div>
+         <div class="card-intervenant" data-category="design">
+            <img src="images/creative designer.jpeg" alt="designer">
+            
+            <h3>Jhon Devin</h3>
+
+            <p>Creative Designer</p>
+            <span>Cote d'Ivoire</span>
+        </div>
+         <div class="card-intervenant" data-category="data">
+            <img src="images/Data analyste.jpeg" alt="data">
+            
+            <h3>David Smith</h3>
+
+            <p>Analyste Data</p>
+            <span>Ghana</span>
+        </div>
+         <div class="card-intervenant" data-category="tech">
+            <img src="images/cloud enginner.jpeg" alt="enginnner">
+            
+            <h3>Karima Ndaiye</h3>
+
+            <p>Ingenieur Cloud</p>
+            <span>Senegal</span>
+        </div>
+    </sectin>
+    <footer class="footer">
+        <div class="fContainer">
+
+            <div>
+                <h3>AfriConnect</h3>
+                <p>Le somme africain de l'innovation.</p>
+            </div>
+
+            <div>
+                <h3>liens</h3>
+                <p>Accueil</p>
+                <p>Programme</p>
+                <p>Intervenants</p>
+                <p>Contact</p>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p>Email: info@AfriConnect.com</p>
+                <p>+221 00 000 00 00</p>
+            </div>
+        </div>
+        <p class="copyright">
+             &copy;<span id="year"></span> AfriConnect Summit
+        </p>
+        <button id="topBtn"></button>
+
+    </footer>
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AfriConnect Summit 2026</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <!-- Votre feuille de style personnelle-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-globe"></i>
+                <span>AfriConnect Summit 2026</span>
+            </div>
+            <ul class="nav" id="lieu">
+                <li><a href="index.html" class="active"> Accueil</a></li>
+                <li><a href="programme.html" >Programme</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
+                <li><a href="contact.html" >Contact</a></li>
+            </ul>
+            <div class="right">
+                <button id="theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <div class="humberger" id="humberger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <section class="Hero-I">
+        <h1>Contact & Inscription</h1>
+        <p><a href="index.html">Accueil</a>
+        > Contact
+        </p>
+    </section>
+    <section class="contact">
+        <div class="contact-container">
+            <div class="form-box">
+
+                <h2>
+                    <i class="fa-solid fa-user-plus"></i>
+                    Inscription
+                </h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="email">
+                        <span class="error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Nom complet</label>
+                        <input type="text" id="nom">
+                        <span class="error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Telephone</label>
+                        <input type="tel" id="telephoe">
+                        <span class="error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Type de participation</label>
+
+                        <select id="paticipation">
+                            <option value="">Choisir</option>
+                            <option>Participant</option>
+                            <option >Intervenant</option>
+                            <option >Sponsor</option>
+                        </select>
+
+                        <span class="error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Pays africain</label>
+
+                        <select id="pays">
+                            <option value="">Choisir votre pays</option>
+                             <option>Mauritanie</option>
+                             <option>Senegal</option>
+                             <option>Maroc</option>
+                             <option>Ghana</option>
+                             <option>Tunisie</option>
+                             <option>Cote d'Ivoire</option>
+                             <option>Ghinia</option>
+                        </select>
+                        
+                        <span class="error"></span>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label>Message / Motivation</label>
+
+                        <textarea id="message"></textarea>
+
+                        <span class="error"></span>
+                    </div>
+
+                    <button type="submit">
+                        <i class=" fa-solid fa-paper-pane"></i>
+                        Envoyer
+                    </button>
+
+                    <p id="success"></p>
+                </form>
+            </div>
+
+            <div class="info-box">
+                <h2>
+                    <i class="fa-solid fa-circle-info"></i>
+                    Informations
+                </h2>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Dakar, Senegal
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    contact@africonnect.com
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +221 77 000 00 00
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-clock"></i>
+                    Lundi - Vendredi : 8h - 18h
+                </p>
+
+            </div>
+        </div>
+    </section>
+    <section class="faq">
+
+        <h2>
+            Question frequentes
+        </h2>
+        <div class="faq-item">
+            <input type="checkbox" id="q1">
+
+            <label for="q1">
+                Quand aura lieu AfriConnect Summit 2026?
+            </label>
+
+            <div class="reponse">
+
+                <p>
+                    L'evenement aura lieu en 2026 a Dakar.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <input type="checkbox" id="q2">
+
+            <label for="q2">
+                Qui peut participer au sommet?
+            </label>
+
+            <div class="reponse">
+
+                <p>
+                    Les etudiants, professionnels, entreprises et innovateurs africains peuvent participer.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <input type="checkbox" id="q3">
+
+            <label for="q3">
+                Comment devenir sponsor?
+            </label>
+
+            <div class="reponse">
+
+                <p>
+                    Vous pouvez nous contacter via la formulaire d'inscription.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <input type="checkbox" id="q4">
+
+            <label for="q4">
+                Les inscriptions sont-elles gratuites?
+            </label>
+
+            <div class="reponse">
+
+                <p>
+                    Certaines participations sont gratuites selon le profil.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <input type="checkbox" id="q5">
+
+            <label for="q5">
+                Puis-je participer en ligne?
+            </label>
+
+            <div class="reponse">
+
+                <p>
+                    Oui, une participation virtuelle sera disponible.
+                </p>
+            </div>
+        </div>
+
+    </section>
+    <section class="map">
+
+        <h2>
+            <i class="fa-solid fa-map"></i>
+            Localisation
+        </h2>
+
+        <ifram 
+        src=""
+        loading="Lazy">
+    </ifram>
+    </section>
+
+
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
