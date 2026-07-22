@@ -6,6 +6,10 @@
     --light-color: #FEFAE0;
     --text-primary: #283618;
     --text-secondary:#606C38;
+    --background-color:#FEFAE0;
+    --text-color:#283618;
+    --card-color:#ffffff;
+    --card-text:#283617;
     
     --title-font: 'Poppins', sans-serif;
     --body-font:'Roboto', sans-serif;
@@ -13,6 +17,12 @@
     --border-radius : 12px;
     --transition: 0.3s ease;
 
+}
+/*dark light*/
+[data-theme="dark"] {
+    --background-color:#1b1b1b;
+    --text-color:#FEFAE0;
+    --card-text:#283617;
 }
 *{
     margin: 0;
@@ -22,7 +32,8 @@
 
 body{
     font-family: var(--body-font);
-    background-color: var(--light-color);
+    background-color: var(--background-color);
+    color: var(--text-color);
     line-height: 1.6;
 
 }
@@ -53,7 +64,7 @@ header{
 }
 h1,h2,h3,h4{
     font-family: var(--title-font);
-    color: var(--text-secondary);
+    color: var(--text-color);
 }
 a {
     text-decoration: none;
@@ -109,7 +120,7 @@ button{
     display: flex;
     align-items: center;
     padding-top: 160px;
-    background: var(--light-color);
+    background: var(--background-color);
 }
 .button a{
     padding: 10px 15px;
@@ -160,7 +171,7 @@ button{
 .sponsors{
     padding: 60px 10%;
     text-align: center;
-    background: white;
+    background: var(--background-color);
 }
 .sponsors h2{
     margin-bottom: 40px;
@@ -225,7 +236,7 @@ button{
 }
 
 .footer {
-    background-color: var(--light-color);
+    background-color: var(--background-color);
     padding: 20px;
 }
 .fContainer {
@@ -319,7 +330,7 @@ tr:last-child td{
     gap: 25px;
 }
 .theme-card{
-    background: white;
+    background: var(--card-color);
     padding: 30px;
     text-align: center;
     border-radius: var(--border-radius);
@@ -353,10 +364,13 @@ tr:last-child td{
 }
 
 .card-intervenant{
-    background: white;
+    background: var(--card-color);
     text-align: center;
     padding: 25px;
     border-radius: 15px;
+}
+.card-intervenant h3 span p{
+    background-color: var(--card-text);
 }
 .card-intervenant img{
     width: 120px;
@@ -364,7 +378,7 @@ tr:last-child td{
     border-radius: 50%;
     object-fit: cover;
 }
-.card-intervenant span{
+.card-intervenant span, h3,p{
     color: var(--accent-dark);
 }
 /* Contact*/
@@ -414,7 +428,7 @@ textarea {
 
 .form-box button{
     background: var(--light-color);
-    color: white;
+    color: var(--secondary-color);
     border: none;
     padding: 14px 30px;
     border-radius: 25px;
@@ -452,7 +466,7 @@ textarea {
 }
 .faq-item label{
     display: block;
-    background: var(--light-color);
+    color: var(--text-color);
     padding: 15px;
     cursor: pointer;
 }
@@ -600,4 +614,64 @@ button:hover,
         font-size: 2.5rem;
     }
 
+}
+/* scroll*/
+.navbar{
+    transition: 0.3s ease;
+}
+.navbar.scrolled{
+    background: rgba(255,255,255,0.95);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.navbar.scrolled a{
+    color: #333;
+}
+/*humberger*/
+.hamburger{
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+.humberger span{
+    width: 30px;
+    height: 3px;
+    background: black;
+    transition: 0.3s;
+}
+/*mobile*/
+@media (max-width:768px){
+    .nav{
+        display: none;
+        flex-direction: column;
+    }
+    .humberger{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+    }
+    .nav.active{
+        display: flex;
+    }
+}
+.reveal{
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+/* fade in */
+.fade-in {
+    transform: translateY(30px);
+}
+/* slide in*/
+.slide-in{
+    transform: translateX(-50px);
+}
+/* zoom-in*/
+.zoom-in{
+    transform: scale(0.8);
+}
+.reveal.active{
+    opacity: 1;
+    transform: translate(0) scale(1);
 }
